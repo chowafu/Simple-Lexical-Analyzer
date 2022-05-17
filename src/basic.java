@@ -179,7 +179,7 @@ class Token implements Constants{
     }
 
     String get() {
-        if (value.equals("\0")) {
+        if (!value.equals("\0")) {
             return String.format("%s: %s", this.type, this.value);
         }
 
